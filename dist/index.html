@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <header class="header container">
+    <div class="header__logo-block">
+      <a class="header__logo-link" href="#">
+        <img class="header__logo" src="./img/logo.svg" alt="logo">
+        <img class="header__fixed-logo" src="./img/fixedlogo.svg" alt="logo">
+      </a>
+      <div class="header__menu-wrapper">
+        <button class="header__menu-btn">
+          <img class="header__menu" src="./img/menu.svg" alt="menu">
+          <img class="header__fixed-menu" src="./img/fixedmenu.svg" alt="menu">
+        </button>
+        <button class="header__order-btn header__order-btn--black">
+          <a class="header__order header__order--black" href="#">Замовити картку</a>
+        </button>
+      </div>
+    </div>
+    <div class="header__logo-block--fixed">
+      <a class="header__logo-link--fixed" href="#">
+        <img class="header__logo--fixed" src="./img/fixedlogo.svg" alt="logo">
+      </a>
+      <div class="header__menu-wrapper--fixed">
+        <button class="header__menu-btn--fixed">
+          <img class="header__menu--fixed" src="./img/fixedmenu.svg" alt="menu">
+        </button>
+        <button class="header__order-btn--fixed">
+          <a class="header__order--fixed" href="#">Замовити картку</a>
+        </button>
+      </div>
+    </div>
+    <div class="header__card-block">
+      <p class="header__name">Visa Signature</p>
+      <h1 class="header__caption">Картка для яскравих подорожей</h1>
+      <img class="header__img" src="./img/card.svg" alt="kartka">
+    </div>
+  </header>
+  <main class="main container">
+    <h2 class="main__caption">Планування подорожі</h2>
+    <p class="main__description">Ретельна підготовка — запорука вдалої мандрівки</p>
+    <div class="main__card-block"> 
+      <div class="main__card">
+        <div class="main__img-wrapper">
+          <img class="main__img" src="./img/vlhc.png" alt="VLHC">
+        </div>
+        <h3 class="main__card-caption">Visa Luxury Hotel collection </h3>
+        <p class="main__card-description">
+          Діє по всьому світу цілодобово й надає для вас глобальний сервіс інформаційної підтримки в телефонному режимі.
+        </p>
+        <div class="main__details-block">
+          <a class="main__card-detail" href="#">Подробнее <img src="./img/vectorblue.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="main__car">
+        <img class="main__car-img" src="./img/car.png" alt="car">
+        <h3 class="main__car-caption">Оренда авто</h3>
+        <p class="main__card-description">Діє по всьому світу цілодобово й надає для вас глобальний сервіс інформаційної підтримки в телефонному режимі.</p>
+        <div class="main__details-block">
+          <a class="main__car-detail" href="#">Подробнее <img src="./img/vectorblack.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="main__card" id="service">
+        <div class="main__img-wrapper">
+          <img class="main__img" src="./img/visa.png" alt="visa">
+        </div>
+        <h3 class="main__card-caption">Консьєрж-сервіс</h3>
+        <p class="main__card-description">Діє по всьому світу цілодобово й надає для вас глобальний сервіс інформаційної підтримки в телефонному режимі.</p>
+        <div class="main__details-block">
+          <a class="main__card-detail" href="#">Подробнее <img src="./img/vectorblue.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="main__card" id="safe">
+        <div class="main__img-wrapper">
+          <img class="main__img" src="./img/visa.png" alt="visa">
+        </div>
+        <h3 class="main__card-caption">Оренда сейфу</h3>
+        <p class="main__card-description">Орендуйте сейф зі знижкою 30 % для надійного зберігання важливих документів та цінних речей, доки ви за кордоном.</p>
+      </div>
+      <div class="main__card" id="manager">
+        <div class="main__img-wrapper">
+          <img class="main__img" src="./img/triangle.svg" alt="logo">
+        </div>
+        <h3 class="main__card-caption">Персональний менеджер</h3>
+        <p class="main__card-description">
+          Ваш фінансовий помічник, який завжди допоможе:
+          - здійснити банківські операції за вашим дорученням
+          - підготувати всі необхідні документи до вашого візиту в Банк
+          - надасть якісні консультації й підбере для вас найкращі умови
+        </p>
+      </div>
+      <div class="main__card" id="rent">
+        <div class="main__img-wrapper">
+          <img class="main__img" src="./img/agoda.png" alt="agoda">
+        </div>
+        <h3 class="main__card-caption">Оренда готелю на agoda.com</h3>
+        <p class="main__card-description">Знижки у разі бронювання на  agoda.com. Знижка 12 % в більш ніж 985 тис. готелів по всьому світу</p>
+      </div>
+      <div class="main__bag">
+        <img class="main__bag-img" src="./img/case.png" alt="bag">
+        <h3 class="main__bag-caption">Повне страхування подорожі до 500 000 $</h3>
+        <p class="main__bag-description">Сума страхового покриття для власників карток Visa Signature</p>
+        <div class="main__details-block">
+          <a class="main__bag-detail" href="#">Подробнее <img src="./img/vectorblack.svg" alt=""></a>
+        </div>
+      </div>
+    </div> 
+  </main>
+</body>
+</html>
