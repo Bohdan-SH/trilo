@@ -1,0 +1,441 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFPro/SFProDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #FFF url("../img/bgmob.svg");
+  padding-bottom: 40px;
+}
+
+.header__logo-block {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  padding: 20px 18px 0 18px;
+}
+
+.header__logo-block--fixed {
+  display: none;
+}
+
+.header__fixed-menu,
+.header__fixed-logo {
+  display: none;
+}
+
+.header__menu-btn {
+  border: none;
+  background: none;
+  padding-right: 4px;
+}
+
+.header__order-btn {
+  display: none;
+}
+
+.line {
+  display: none;
+}
+
+.header__name,
+.header__caption {
+  font-family: "SF Pro Display";
+  color: #FFF;
+  text-align: center;
+}
+
+.header__name {
+  font-size: 1.600rem;
+  margin-bottom: 12px;
+}
+
+.header__caption {
+  font-size: 2.938rem;
+  line-height: 120%;
+  letter-spacing: 2.1px;
+  margin: 0 0 40px 0;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.main {
+  background: url("../img/mainmobbg.png") no-repeat;
+  padding: 0 18px;
+}
+
+.main__caption,
+.main__description {
+  font-family: Roboto;
+  color: #FFF;
+  padding-left: 5px;
+}
+
+.main__caption {
+  font-weight: bold;
+  font-size: 2.000rem;
+  line-height: 120%;
+  padding-top: 89px;
+  margin-bottom: 16px;
+}
+
+.main__description {
+  margin-bottom: 40px;
+  font-size: 1.250rem;
+  line-height: 140%;
+}
+
+.main__card-link {
+  text-decoration: none;
+}
+
+.main__car,
+.main__bag,
+.main__card {
+  padding: 26px 24px 0px 24px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.main__card {
+  box-shadow: 0 2px 4px 0px #d3d3d3;
+  background-color: #FFF;
+}
+
+.main__img-wrapper {
+  width: 0;
+  position: relative;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 18px;
+}
+
+.main__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.main__car {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7AA0FF), to(#57D4F1));
+  background: -webkit-linear-gradient(#7AA0FF, #57D4F1);
+  background: linear-gradient(#7AA0FF, #57D4F1);
+  padding-top: 142px;
+  border: none;
+  position: relative;
+}
+
+.main__car-img {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+
+.main__bag {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFDF6B), to(#FFD53C));
+  background: -webkit-linear-gradient(#FFDF6B, #FFD53C);
+  background: linear-gradient(#FFDF6B, #FFD53C);
+  box-shadow: none;
+}
+
+.main__card-caption {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.250rem;
+  margin-bottom: 16px;
+  line-height: 120%;
+  letter-spacing: -0.050568px;
+  color: #222222;
+}
+
+.main__card-description {
+  font-family: Roboto;
+  font-size: 1.125rem;
+  line-height: 144%;
+  letter-spacing: -0.050568px;
+  color: #0F0F10;
+  padding-bottom: 23px;
+}
+
+.main__details-block {
+  padding-bottom: 30px;
+}
+
+.main__car-detail,
+.main__bag-detail,
+.main__card-detail {
+  font-family: 'SF Pro Display';
+  font-size: 0.938rem;
+  line-height: 120%;
+  color: #4672E1;
+  text-decoration: none;
+}
+
+.main__car-detail,
+.main__bag-detail {
+  color: #222222;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 376px) {
+  .container {
+    max-width: 1366px;
+    width: 100%;
+  }
+  .header {
+    background: #FFF url("../img/bgweb.svg") no-repeat;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+  .header__logo-block {
+    margin: 0 auto;
+    position: relative;
+    padding: 25px 220px 20px 235px;
+    margin-bottom: 90px;
+  }
+  .header__logo-block:after {
+    content: "";
+    position: absolute;
+    width: 66.5%;
+    height: 1px;
+    background-color: #FFF;
+    opacity: 0.15;
+    top: 80px;
+  }
+  .header__logo-block--fixed {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    padding: 25px 220px 20px 235px;
+    opacity: 0;
+    -webkit-transition: opacity;
+    transition: opacity;
+  }
+  .header__menu-wrapper--fixed,
+  .header__menu-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+  .header__menu-btn {
+    padding-top: 2px;
+  }
+  .header__menu-btn--fixed {
+    padding-top: 2px;
+    border: none;
+    background: none;
+  }
+  .header__order-btn {
+    display: block;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-left: 18px;
+  }
+  .header__order-btn--fixed {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-left: 22px;
+  }
+  .header__order-btn {
+    background-color: #FFF;
+  }
+  .header__order-btn--fixed {
+    background-color: #000;
+  }
+  .header__order--fixed,
+  .header__order {
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+  }
+  .header__order {
+    color: #066EB0;
+  }
+  .header__order--fixed {
+    color: #FFF;
+  }
+  .header__card-block {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .header__name {
+    padding-left: 15px;
+    font-size: 2.188rem;
+    margin: 0;
+  }
+  .header__caption {
+    width: 50%;
+    align-self: center;
+    font-weight: bold;
+    font-size: 4.000rem;
+    line-height: 131%;
+    margin-bottom: 20px;
+  }
+  .header__img {
+    align-self: center;
+    width: 40%;
+    padding-left: 15px;
+  }
+  .main {
+    background: url("../img/mainwebbg.png") no-repeat;
+    width: 79%;
+    margin: 0 auto;
+    z-index: 0;
+    border-radius: 25px;
+  }
+  .main__caption {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 3.375rem;
+    padding: 0;
+    padding-top: 65px;
+    padding-left: 75px;
+    padding-bottom: 13px;
+    margin: 0;
+  }
+  .main__description {
+    padding: 0 0 55px 75px;
+    margin: 0;
+  }
+  .main__card-block {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0 0 30px 70px;
+  }
+  .main__card {
+    padding: 30px 10px 0 23px;
+    width: 28.5%;
+    margin: 0;
+    margin-right: 30px;
+    box-shadow: none;
+  }
+  .main__car {
+    margin: 0;
+    padding: 120px 10px 0 23px;
+    width: 28.5%;
+    margin-right: 30px;
+    position: relative;
+    left: 5px;
+    top: 50px;
+  }
+  #service {
+    position: relative;
+    top: 220px;
+    left: 10px;
+  }
+  #safe {
+    position: relative;
+    bottom: 40px;
+    padding-bottom: 10px;
+  }
+  #manager {
+    position: relative;
+    padding-bottom: 55px;
+    top: 85px;
+    left: 5px;
+  }
+  #rent {
+    position: relative;
+    top: 190px;
+    padding-top: 60px;
+    left: 10px;
+  }
+  .main__bag {
+    position: relative;
+    bottom: 70px;
+    margin: 0;
+    padding: 10px 20px 0 23px;
+    width: 28.5%;
+  }
+  .main__img-wrapper {
+    margin-bottom: 10px;
+  }
+  .main__img {
+    padding-right: 5px;
+  }
+  .main__bag-img {
+    position: relative;
+    bottom: 8px;
+    right: 32px;
+  }
+  .main__card-caption {
+    margin-bottom: 10px;
+  }
+  .main__car-caption,
+  .main__bag-caption {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.500rem;
+    line-height: 136.5%;
+    letter-spacing: -0.050568px;
+  }
+  .main__bag-caption {
+    margin-bottom: 9px;
+  }
+  .main__bag-description {
+    padding-bottom: 40px;
+  }
+  .main__card-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    letter-spacing: -0.050568px;
+  }
+  .main__details-block {
+    padding-bottom: 25px;
+  }
+}
