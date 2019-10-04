@@ -4,7 +4,6 @@ let fixedBlock = document.querySelector('.header__logo-block--fixed');
 let sticky = fixedBlock.offsetHeight;
 let card = document.querySelector('.header__img');
 let imgBlock = document.querySelector('.header__img-block');
-let highlight = document.querySelector('.cursorHighlight');
 let carCard = document.querySelector('.main__car');
 let mainBag = document.querySelector('.main__bag');
 let mainCards = [...document.querySelectorAll('.main__card')];
@@ -33,14 +32,8 @@ card.addEventListener('mousemove', (e) => {
     moveX = (ordinate - halfCardHeight)/5;
   }
 
-  if (ordinate < halfCardHeight) {
-    moveY = -moveY;
-  } else {
-    moveY = moveY;
-  }
-
-  card.style.cssText = `transform: rotateX(${-moveX}deg) 
-                        rotateY(${moveY}deg) 
+  card.style.cssText = `transform: rotateX(${moveX}deg) 
+                        rotateY(${-moveY}deg) 
                         scale(1.1);`;
 });
 
@@ -93,12 +86,12 @@ window.addEventListener('scroll', () => {
   let scrolledCard = scrolled / 20;
 
   main.style.cssText = `transform: translateY(${scrolledMain})px);`;
-  carCard.style.cssText = `transform: translateY(${scrolledCard}px);`;
-  mainBag.style.cssText = `transform: translateY(${scrolledCard}px);`;
+  carCard.style.cssText = `transform: translateY(${-scrolledCard}px);`;
+  mainBag.style.cssText = `transform: translateY(${-scrolledCard}px);`;
 
   for (let i = 0; i < mainCards.length; i++) {
     const card = mainCards[i];
     
-    card.style.cssText = `transform: translateY(${scrolledCard}px);`;
+    card.style.cssText = `transform: translateY(${-scrolledCard}px);`;
   }
 });
