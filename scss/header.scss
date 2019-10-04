@@ -1,6 +1,11 @@
 .header {
   background: $white url("../img/bgmob.svg");
-  padding-bottom: 40px;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.vimeo-wrapper {
+  display: none;
 }
 
 .header__logo-block {
@@ -38,6 +43,7 @@
   font-family: "SF Pro Display";
   color: $white;
   text-align: center;
+  z-index: 1;
 }
 
 .header__name {
@@ -49,9 +55,11 @@
   font-size: 2.938rem;
   line-height: 120%;
   letter-spacing: 2.1px;
-  margin: 0 0 40px 0;
+  margin: 0 0 55px 0;
 }
 
 .header__img {
   width: 100%;
+  z-index: 1;
+  padding: 0 35px;
 }

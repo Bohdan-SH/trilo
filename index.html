@@ -11,6 +11,10 @@
 </head>
 <body>
   <header class="header container">
+    <div class="vimeo-wrapper">
+        <iframe class="vimeo-video" src="https://player.vimeo.com/video/275244537?color=ffffff&badge=0&title=0&byline=0&portrait=0&loop=1&muted=1&autoplay=1"
+              loop frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
     <div class="header__logo-block">
       <a class="header__logo-link" href="#">
         <img class="header__logo" src="./img/logo.svg" alt="logo">
@@ -42,14 +46,16 @@
     <div class="header__card-block">
       <p class="header__name">Visa Signature</p>
       <h1 class="header__caption">Картка для яскравих подорожей</h1>
-      <img class="header__img" src="./img/card.svg" alt="kartka">
+      <div class="header__img-block">
+        <img class="header__img" src="./img/group.svg" alt="kartka">
+      </div>
     </div>
   </header>
   <main class="main container">
     <h2 class="main__caption">Планування подорожі</h2>
     <p class="main__description">Ретельна підготовка — запорука вдалої мандрівки</p>
     <div class="main__card-block"> 
-      <div class="main__card">
+      <div class="main__card" data-name="hand">
         <div class="main__img-wrapper">
           <img class="main__img" src="./img/vlhc.png" alt="VLHC">
         </div>
@@ -61,7 +67,7 @@
           <a class="main__card-detail" href="#">Подробнее <img src="./img/vectorblue.svg" alt=""></a>
         </div>
       </div>
-      <div class="main__car">
+      <div class="main__car" data-name="hand">
         <img class="main__car-img" src="./img/car.png" alt="car">
         <h3 class="main__car-caption">Оренда авто</h3>
         <p class="main__card-description">Діє по всьому світу цілодобово й надає для вас глобальний сервіс інформаційної підтримки в телефонному режимі.</p>
@@ -69,7 +75,7 @@
           <a class="main__car-detail" href="#">Подробнее <img src="./img/vectorblack.svg" alt=""></a>
         </div>
       </div>
-      <div class="main__card" id="service">
+      <div class="main__card service" data-name="hand">
         <div class="main__img-wrapper">
           <img class="main__img" src="./img/visa.png" alt="visa">
         </div>
@@ -79,14 +85,14 @@
           <a class="main__card-detail" href="#">Подробнее <img src="./img/vectorblue.svg" alt=""></a>
         </div>
       </div>
-      <div class="main__card" id="safe">
+      <div class="main__card safe">
         <div class="main__img-wrapper">
           <img class="main__img" src="./img/visa.png" alt="visa">
         </div>
         <h3 class="main__card-caption">Оренда сейфу</h3>
         <p class="main__card-description">Орендуйте сейф зі знижкою 30 % для надійного зберігання важливих документів та цінних речей, доки ви за кордоном.</p>
       </div>
-      <div class="main__card" id="manager">
+      <div class="main__card manager">
         <div class="main__img-wrapper">
           <img class="main__img" src="./img/triangle.svg" alt="logo">
         </div>
@@ -98,14 +104,14 @@
           - надасть якісні консультації й підбере для вас найкращі умови
         </p>
       </div>
-      <div class="main__card" id="rent">
+      <div class="main__card rent">
         <div class="main__img-wrapper">
           <img class="main__img" src="./img/agoda.png" alt="agoda">
         </div>
         <h3 class="main__card-caption">Оренда готелю на agoda.com</h3>
         <p class="main__card-description">Знижки у разі бронювання на  agoda.com. Знижка 12 % в більш ніж 985 тис. готелів по всьому світу</p>
       </div>
-      <div class="main__bag">
+      <div class="main__bag" data-name="hand">
         <img class="main__bag-img" src="./img/case.png" alt="bag">
         <h3 class="main__bag-caption">Повне страхування подорожі до 500 000 $</h3>
         <p class="main__bag-description">Сума страхового покриття для власників карток Visa Signature</p>
