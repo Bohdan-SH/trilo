@@ -20,6 +20,11 @@ gulp.task('html', function() {
   .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('js', function() {
+  return gulp.src('dist/js/*.js')
+  .pipe(browserSync.reload({stream: true}))
+});
+
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
@@ -31,6 +36,7 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', function() {
   gulp.watch('dist/scss/**/*.scss', gulp.parallel('scss'))
   gulp.watch('dist/*html', gulp.parallel('html'))
+  gulp.watch('dist/js/*js', gulp.parallel('js'))
 });
 
 gulp.task('default', gulp.parallel('browser-sync', 'watch'));
