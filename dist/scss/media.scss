@@ -136,14 +136,14 @@
   .header__img-block {
     display: flex;
     justify-content: center;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    transition: transform 0.2s;
   }
 
   .header__img {
     width: 32%;
     padding: 0;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    transition: transform 0.2s;
     z-index: 100;
   }
 

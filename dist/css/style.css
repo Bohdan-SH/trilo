@@ -347,18 +347,18 @@ body {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
-  }
-  .header__img {
-    width: 32%;
-    padding: 0;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .header__img {
+    width: 32%;
+    padding: 0;
     z-index: 100;
   }
   .main {
