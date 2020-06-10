@@ -7,14 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bohdan-SH/redlab.git"
+    "type": "git"
   },
   "author": "Bohdan Shurlo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Bohdan-SH/redlab/issues"
-  },
   "browserslist": [
     "last 2 version",
     "> 0.1%",
